@@ -7,9 +7,13 @@ window.onload = function() {
   document.querySelector(".card").innerHTML = generateRandomNum();
 };
 
-const button = document.querySelector("button");
+let button = document.querySelector("#button");
 button.addEventListener("click", () => {
   document.querySelector(".card").classList.add(generateRandomSuit());
+  // document.querySelector(".card").innerHTML = generateRandomNum();
+});
+button.addEventListener("click", () => {
+  // document.querySelector(".card").classList.add(generateRandomSuit());
   document.querySelector(".card").innerHTML = generateRandomNum();
 });
 let generateRandomNum = () => {
