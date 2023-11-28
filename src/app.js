@@ -7,15 +7,15 @@ window.onload = function() {
   document.querySelector(".card").innerHTML = generateRandomNum();
 };
 
-let button = document.querySelector("#button");
+let button = document.querySelectorAll("#button");
 button.addEventListener("click", () => {
   document.querySelector(".card").classList.add(generateRandomSuit());
-  // document.querySelector(".card").innerHTML = generateRandomNum();
-});
-button.addEventListener("click", () => {
-  // document.querySelector(".card").classList.add(generateRandomSuit());
   document.querySelector(".card").innerHTML = generateRandomNum();
 });
+// button.addEventListener("click", () => {
+//   // document.querySelector(".card").classList.add(generateRandomSuit());
+//   document.querySelector(".card").innerHTML = generateRandomNum();
+// });
 let generateRandomNum = () => {
   let numbers = [
     "A",
