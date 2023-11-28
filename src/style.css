@@ -1,1 +1,59 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background: teal;
+  margin-top: 20px;
+}
+/* Apply .card class to entire div */
+.card {
+  text-align: center;
+  margin: auto;
+  height: 400px;
+  font-size: 100px;
+  width: 275px;
+  padding: 20px;
+  padding-top: 130px;
+  border: 1px solid black;
+  border-radius: 10px;
+  position: relative;
+  /* top suit char*/
+  &:before {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 70px;
+  }
+  /* bottom suit char */
+  &:after {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 70px;
+  }
+  &.spade:before,
+  &.spade:after {
+    content: "\2660";
+    color: black;
+  }
+  &.club:before,
+  &.club:after {
+    content: "\2663";
+    color: black;
+  }
+  &.heart:before,
+  &.heart:after {
+    content: "\2665";
+    color: red;
+  }
+  &.diamond:before,
+  &.diamond:after {
+    content: "\2666";
+    color: red;
+  }
+}
+.button {
+  color: teal;
+  text-align: center;
+  margin-left: 729px;
+  margin-top: 50px;
+}
